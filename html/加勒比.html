@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<title>加勒比海盗5：死无对证</title>
+		<link type="text/css" href="../css/video.css" rel="stylesheet" />
+	</head>
+	<script src="../js/jquery-1.12.4.js"></script>
+	<script type="text/javascript">
+		function sendComment() {
+			var list = document.getElementById('commentList');
+			var text = document.getElementById('content');
+			var li = document.createElement('li');
+			if(text.value == '') {
+				alert('请输入内容');
+			} else {
+			li.innerHTML = text.value;
+			list.appendChild(li);
+			text.value = '';
+			return false;
+			}
+			
+		}
+			$(function() {
+				// test 的点击事件
+				$("#vip").click(function() {
+					alert("该区域尚未开放，请尽情期待！");
+				});
+			})
+	</script>
+
+	<body>
+		<div id="top">
+			<div class="logo">
+				<img src="../img/数据魔方.png" />
+			</div>
+		
+			<ul class="topList">
+				<li>
+					<a href="index.html">首页</a>
+				</li>
+				<li>
+					<a href="热门.html">热门</a>
+				</li>
+				<li>
+					<a href="分类.html">分类</a>
+				</li>
+				<li id="vip">
+					<a href="">VIP中心</a>
+				</li>
+				<li>
+					<img src="../img/用户头像.png" width="50" height="50" style="margin-left: -40%; margin-bottom: -5%;margin-top: -5%;cursor: pointer;"/>
+				</li>
+			</ul>
+			<div>
+				<input type="text" name="s" class="sinput" placeholder="" autofocus x-webkit-speech>
+				<input type="submit" value="搜索" class="sbtn">
+			</div>
+		</div>
+		<hr />
+		<article>
+			<section>
+				<figure>
+					<video width="60%" height="40%" controls loop autoplay muted>
+						<source src="../video/加勒比.mp4" type="video/mp4"></source>
+						<a href="../video/加勒比.mp4" download="video/加勒比.mp4"></a>
+					</video>
+					<figcaption><p>&nbsp;&nbsp;杰克船长（约翰尼·德普饰）发现令人闻风丧胆的萨拉查船长 （哈维尔·巴登饰）竟率领着一众夺命亡灵水手逃出了百慕大三角区。他们扬言要杀尽世上所有的海盗，头号目标就是杰克船长。要想改写命运，杰克船长唯一的希望就是找到传说中海神波塞冬的三叉戟，拥有它就能拥有统治整个海洋的力量。为了寻获这件神器，杰克船长被迫和聪明美丽的天文学家卡琳娜·史密斯（卡雅·斯考达里奥饰）以及固执的年轻皇家海军亨利（布兰顿·思怀兹饰）联手出击。航行着他那破破烂烂的“黑珍珠”号，杰克船长不但决心要改变自己的厄运，同时也力求能从史上最狠毒可怕的敌人那里捡回一条命。</p></figcaption>
+				</figure>
+			</section>
+			<section>
+				<form autocomplete="on">
+					<div>
+						<textarea name="input" rows="3" cols="20" placeholder="请输入评论……" title="评论框" accesskey="g" spellcheck="true" id="content"></textarea>
+					</div>
+					<button type="button" onclick="sendComment()">
+		    			<mark>发表评论</mark>
+		    		</button>
+				</form>
+			</section>
+			<section>
+				<ul id="commentList"></ul>
+			</section>
+		</article>
+		<div id="bottom">
+			<p>361魔方娱乐有限公司</p>
+		</div>
+	</body>
+
+</html>

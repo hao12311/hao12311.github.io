@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>电影网站</title>
+		<link rel="stylesheet" href="css/css.css" />
+	</head>
+	<script src="js/jquery-1.12.4.js"></script>
+	<script type="text/javascript">
+		$(function() {
+			// test 的点击事件
+			$("#vip").click(function() {
+				alert("该区域尚未开放，请尽情期待！");
+			});
+		})
+	</script>
+	<body>
+		<div id="top">
+			<div class="logo">
+				<img src="./img/数据魔方.png" />
+			</div>
+
+			<ul class="topList">
+				<li>
+					<a href="html/index.html">首页</a>
+				</li>
+				<li>
+					<a href="html/热门.html">热门</a>
+				</li>
+				<li>
+					<a href="html/分类.html">分类</a>
+				</li>
+				<li id="vip">
+					<a href="">VIP中心</a>
+				</li>
+				<li>
+					<a href="html/登录.html">登录/注册</a>
+				</li>
+			</ul>
+			<div>
+				<input type="text" name="s" class="sinput" placeholder="" autofocus x-webkit-speech>
+				<input type="submit" value="搜索" class="sbtn">
+			</div>
+		</div>
+		<div id="content">
+			<div class="left_side">
+				<div class="top_pic">
+					<img src="img/剑雨.webp" style="width: 1150px;" />
+					<img src="img/独立日.webp" style="width: 1150px;" />
+					<img src="img/白.webp" style="width: 1150px;" />
+					<img src="img/翱翔.jfif" style="width: 1200px;" />
+				</div>
+			</div>
+			<div id="right_side">
+				<ul class="list_group">
+					<li class="list_title">热门电影榜</li>
+					<li class="list_item"><a href="html/尚气.html">1.尚气与十环传奇</a></li>
+					<li class="list_item"><a href="html/长津湖.html">2.长津湖</a></li>
+					<li class="list_item"><a href="html/家乡.html">3.我和我的家乡</a></li>
+					<li class="list_item"><a href="html/白蛇2.html">4.白蛇2：青蛇劫起</a></li>
+					<li class="list_item"><a href="html/医生.html">5.中国医生</a></li>
+					<li class="list_item"><a href="html/复联4.html">6.复仇者联盟4：终局之战</a></li>
+					<li class="list_item">
+						<p><a href="">--->更多</a></p>
+					</li>
+				</ul>
+
+				<ul class=" list_group">
+					<li class="list_title">新片预告</li>
+					<li class="list_item">
+						<figure>
+							<video width="100%" height="100%" controls loop autoplay muted>
+								<source src="video/指环.mp4" type="video/mp4">
+								</source>
+								<a href="video/指环.mp4" download="指环.mp4"></a>
+							</video>
+							<figcaption><a href="html/指环.html">霍比特人3：五军之战</a></figcaption>
+						</figure>
+					</li>
+					<li class="list_item">
+						<figure>
+							<video width="100%" height="100%" controls loop autoplay muted>
+								<source src="video/蜘蛛.mp4" type="video/mp4">
+								</source>
+								<a href="video/蜘蛛.mp4" download="蜘蛛.mp4"></a>
+							</video>
+							<figcaption><a href="html/蜘蛛.html">蜘蛛侠3：英雄无归</a></figcaption>
+						</figure>
+					</li>
+					<li class="list_item">
+						<figure>
+							<video width="100%" height="100%" controls loop autoplay muted>
+								<source src="video/加勒比.mp4" type="video/mp4">
+								</source>
+								<a href="video/加勒比.mp4" download="加勒比.mp4"></a>
+							</video>
+							<figcaption><a href="html/加勒比.html">加勒比海盗5：死无对证</a></figcaption>
+						</figure>
+					</li>
+				</ul>
+			</div>
+			<div id="products">
+				<h2>经典推荐</h2>
+				<div>
+					<img src="img/公主.jpg" alt="公主" />
+					<a href="html/公主.html">
+						<p>公主日记</p>
+					</a>
+				</div>
+				<div>
+					<img src="img/山姆.jpg" alt="山姆" />
+					<a href="html/山姆.html">
+						<p>我是山姆</p>
+					</a>
+				</div>
+				<div>
+					<img src="img/心动.jpg" alt="心动" />
+					<a href="html/心动.html">
+						<p>怦然心动</p>
+					</a>
+				</div>
+				<div>
+					<img src="img/礼物.jpg" alt="礼物" />
+					<a href="html/七号房的礼物.html">
+						<p>七号房的礼物</p>
+					</a>
+				</div>
+				<div>
+					<img src="img/父辈.jpg" alt="父辈" />
+					<a href="html/我和我的父辈.html">
+						<p>我和我的父辈</p>
+					</a>
+				</div>
+				<div>
+					<img src="img/怒火.jpg" alt="怒火" />
+					<a href="html/怒火.html">
+						<p>怒火</p>
+					</a>
+				</div>
+			</div>
+		</div>
+		<button class="btn"><a href="#" class="toTop">返回顶部</a></button>
+		<div id="bottom">
+			<p>361魔方娱乐有限公司</p>
+		</div>
+		<script type="text/javascript">
+			var video = document.getElementsByTagName("video");
+			// 暂停函数
+			function pauseAll() {
+				var self = this;
+				[].forEach.call(video, function(i) {
+					// 将audios中其他的audio全部暂停
+					i !== self && i.pause();
+				})
+			}
+			// 给play事件绑定暂停函数
+			[].forEach.call(video, function(i) {
+				i.addEventListener("play", pauseAll.bind(i));
+			})
+		</script>
+	</body>
+</html>

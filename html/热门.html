@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<link href="../css/css3.css" type="text/css" rel="stylesheet"/>
+		<script src="../js/jquery-1.12.4.js"></script>
+		<script type="text/javascript">
+			$(function() {
+				// test 的点击事件
+				$("#vip").click(function() {
+					alert("该区域尚未开放，请尽情期待！");
+				});
+			})
+		</script>
+	</head>
+	<body>
+		<div id="top">
+			<div class="logo">
+				<img src="../img/数据魔方.png" />
+			</div>
+		
+			<ul class="topList">
+				<li>
+					<a href="index.html">首页</a>
+				</li>
+				<li>
+					<a href="">热门</a>
+				</li>
+				<li>
+					<a href="分类.html">分类</a>
+				</li>
+				<li id="vip">
+					<a href="">VIP中心</a>
+				</li>
+				<li>
+					<img src="../img/用户头像.png" width="50" height="50" style="margin-left: 10%; margin-bottom: -5%;margin-top: -5%;cursor: pointer;"/>
+				</li>
+			</ul>
+			<div>
+				<input type="text" name="s" class="sinput" placeholder="" autofocus x-webkit-speech>
+				<input type="submit" value="搜索" class="sbtn">
+			</div>
+		</div>
+		<hr />
+		<h1>热门电影</h1>
+		<div id="products">
+			<a href="尚气.html">
+			<div>
+				<img src="../img/尚气.webp" alt="公主" />			
+					<p>尚气与十环传奇</p>			
+			</div>
+			</a>
+			<a href="白蛇2.html">
+			<div>
+				<img src="../img/白蛇2.webp" alt="山姆" />				
+					<p>白蛇2：青蛇劫起</p>			
+			</div>
+			</a>
+			<a href="长津湖.html">
+			<div>
+				<img src="../img/长津.webp" alt="心动" />					
+					<p>长津湖</p>	
+			</div>
+			</a>
+			<a href="家乡.html">
+			<div>
+				<img src="../img/家乡.jpg" alt="礼物" />					
+					<p>我和我的家乡</p>					
+			</div>
+			</a>
+			<a href="医生.html">
+			<div>
+				<img src="../img/医生.jpg" alt="父辈" />				
+					<p>中国医生</p>			
+			</div>
+			</a>
+			<a href="复联4.html">
+			<div>
+				<img src="../img/复联.jpg" alt="怒火·重案" />					
+					<p>复仇者联盟4：终局之战</p>				
+			</div>
+			</a>
+		</div>
+		
+		<div id="bottom">
+			<p>361魔方娱乐有限公司</p>
+		</div>
+	</body>
+</html>

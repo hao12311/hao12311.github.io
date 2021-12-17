@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<link rel="stylesheet" type="text/css" href="../css/css4.css" />
+		<script src="../js/jquery-1.12.4.js"></script>
+		<script type="text/javascript">	
+				$(function() {
+					// test 的点击事件
+					$("#vip").click(function() {
+						alert("该区域尚未开放，请尽情期待！");
+					});
+				})
+			$(document).ready(function() {
+				$("#da").click(function() {
+					$("#gong,#chou,#shang,#san,#xin,#du,#ao,#qi").hide();
+					$("#jian,#yi,#jia,#nu,#bai,#chang,#fu").show();
+				});
+				
+				$("#o").click(function() {
+					$("#jian,#yi,#jia,#nu,#bai,#chang,#fu,#qi").hide();
+					$("#gong,#chou,#shang,#san,#xin,#du,#ao").show();
+				});
+				$("#ri").click(function() {
+					$("#jian,#jia,#nu,#bai,#fu,#gong,#chou,#shang,#du,#ao").hide();
+					$("#yi,#chang,#san,#xin,#qi").show();
+				});
+				$("#dong").click(function() {
+					$("#yi,#chang,#san,#xin,#qi,#jian,#jia,#nu,#fu,#gong,#chou,#du,#ao").hide();
+					$("#bai,#shang").show();
+				});
+				$("#ke").click(function() {
+					$("#yi,#chang,#san,#xin,#qi,#jian,#jia,#nu,#fu,#gong,#ao,#bai").hide();
+					$("#chou,#du,#shang").show();
+				});
+				$("#all").click(function() {
+					$("#yi,#chang,#san,#xin,#qi,#jian,#jia,#nu,#fu,#gong,#ao,#bai,#chou,#du,#shang").show();
+				});
+			});
+		</script>
+	</head>
+	<body>
+		<div id="top">
+			<div class="logo">
+				<img src="../img/数据魔方.png" />
+			</div>
+
+			<ul class="topList">
+				<li>
+					<a href="index.html">首页</a>
+				</li>
+				<li>
+					<a href="热门.html">热门</a>
+				</li>
+				<li>
+					<a href="分类.html">分类</a>
+				</li>
+				<li id="vip">
+					<a href="">VIP中心</a>
+				</li>
+				<li>
+					<img src="../img/用户头像.png" width="50" height="50" style="margin-left: 10%; margin-bottom: -5%;margin-top: -5%;cursor: pointer;" />
+				</li>
+			</ul>
+			<div>
+				<input type="text" name="s" class="sinput" placeholder="" autofocus x-webkit-speech>
+				<input type="submit" value="搜索" class="sbtn">
+			</div>
+		</div>
+		<hr />
+		<div class="btn">
+			<button id="all" class="btn1">全部</button>
+			<button id="da" class="btn1">大陆</button>
+			<button id="o" class="btn1">欧美</button>
+			<button id="ri" class="btn1">励志</button>
+			<button id="dong" class="btn1">玄幻</button>
+			<button id="ke" class="btn1">科幻</button>
+		</div>
+		<hr />
+		<div id="allImg">
+			<div id="jian">
+				<a href="剑雨.html">
+					<img src="../img/剑.jpg" />
+					<p>剑雨</p>
+				</a>
+
+			</div>
+			<div id="yi">
+				<a href="医生.html">
+					<img src="../img/医生.jpg" />
+				    <p>中国医生</p>
+				</a>
+				
+			</div>
+			<div id="jia">
+				<a href="家乡.html">
+					<img src="../img/家乡.jpg" />
+					<p>我和我的家乡</p>
+				</a>
+
+			</div>
+			<div id="nu">
+				<a href="怒火.html">
+					<img src="../img/怒火.jpg" />
+					<p>怒火.重案</p>
+				</a>
+
+			</div>
+			<div id="fu">
+				<a href="我和我的父辈.html">
+					<img src="../img/父辈.jpg" />
+					<p>我和我的父辈</p>
+				</a>
+
+			</div>
+			<div id="bai">
+				<a href="白蛇2.html">
+					<img src="../img/白蛇.png" />
+					<p>白蛇2：青蛇劫起</p>
+				</a>
+
+			</div>
+			<div id="chang">
+				<a href="长津湖.html">
+					<img src="../img/长津.jpg" />
+					<p>长津湖</p>
+				</a>
+
+			</div>
+			<div id="gong">
+				<a href="公主.html">
+					<img src="../img/公主.jpg" />
+					<p>公主日记</p>
+				</a>
+
+			</div>
+			<div id="chou">
+				<a href="复联4.html">
+					<img src="../img/复联.jpg" />
+					<p>复仇者联盟4：终局之战</p>
+				</a>
+
+			</div>
+			<div id="shang">
+				<a href="尚气.html">
+					<img src="../img/尚气.jpg" />
+					<p>尚气与十环传奇</p>
+				</a>
+
+			</div>
+			<div id="san">
+				<a href="山姆.html">
+					<img src="../img/山姆.jpg" />
+					<p>我是山姆</p>
+				</a>
+
+			</div>
+			<div id="xin">
+				<a href="心动.html">
+					<img src="../img/心动.jpg" />
+					<p>怦然心动</p>
+				</a>
+
+			</div>
+			<div id="du">
+				<a href="独立.html">
+					<img src="../img/独.jpg" />
+					<p>独立日：卷土重来</p>
+				</a>
+
+			</div>
+			<div id="ao">
+				<a href="翱翔.html">
+					<img src="../img/翱翔.jpg" />
+					<p>翱翔雄心</p>
+				</a>
+
+			</div>
+			<div id="qi">
+				<a href="7号房的礼物.html">
+					<img src="../img/礼物.jpg" />
+					<p>7号房的礼物</p>
+				</a>
+
+			</div>
+		</div>
+		<div id="bottom">
+			<p>361魔方娱乐有限公司</p>
+		</div>
+	</body>
+</html>
