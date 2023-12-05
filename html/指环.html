@@ -1,91 +1,100 @@
 <!DOCTYPE html>
 <html>
 
-	<head>
-		<meta charset="utf-8" />
-		<title>霍比特人3：五军之战</title>
-		<link type="text/css" href="../css/video.css" rel="stylesheet" />
-	</head>
-	<script src="../js/jquery-1.12.4.js"></script>
-	<script type="text/javascript">
-		function sendComment() {
-			var list = document.getElementById('commentList');
-			var text = document.getElementById('content');
-			var li = document.createElement('li');
-			if(text.value == '') {
-				alert('请输入内容');
-			} else {
-			li.innerHTML = text.value;
-			list.appendChild(li);
-			text.value = '';
-			return false;
-			}
-			
+<head>
+	<meta charset="utf-8" />
+	<title>霍比特人3：五军之战</title>
+	<link type="text/css" href="../css/video.css" rel="stylesheet" />
+</head>
+<script src="../js/jquery-1.12.4.js"></script>
+<script type="text/javascript">
+	function sendComment () {
+		var list = document.getElementById('commentList')
+		var text = document.getElementById('content')
+		var li = document.createElement('li')
+		if (text.value == '') {
+			alert('请输入内容')
+		} else {
+			li.innerHTML = text.value
+			list.appendChild(li)
+			text.value = ''
+			return false
 		}
-			$(function() {
-				// test 的点击事件
-				$("#vip").click(function() {
-					alert("该区域尚未开放，请尽情期待！");
-				});
-			})
-	</script>
-	<body>
-		<div id="top">
-			<div class="logo">
-				<img src="../img/数据魔方.png" />
-			</div>
-		
-			<ul class="topList">
-				<li>
-					<a href="index.html">首页</a>
-				</li>
-				<li>
-					<a href="热门.html">热门</a>
-				</li>
-				<li>
-					<a href="分类.html">分类</a>
-				</li>
-				<li id="vip">
-					<a href="">VIP中心</a>
-				</li>
-				<li>
-					<img src="../img/用户头像.png" width="50" height="50" style="margin-left: -40%; margin-bottom: -5%;margin-top: -5%;cursor: pointer;"/>
-				</li>
-			</ul>
-			<div>
-				<input type="text" name="s" class="sinput" placeholder="" autofocus x-webkit-speech>
-				<input type="submit" value="搜索" class="sbtn">
-			</div>
+
+	}
+	$(function () {
+		// test 的点击事件
+		$("#vip").click(function () {
+			alert("该区域尚未开放，请尽情期待！")
+		})
+	})
+</script>
+
+<body>
+	<div id="top">
+		<div class="logo">
+			<img src="../img/数据魔方.png" />
 		</div>
-		<hr />
-		<article>
-			<section>
-				<figure>
-					<video width="60%" height="40%" controls loop autoplay muted>
-						<source src="../video/指环.mp4" type="video/mp4"></source>
-						<a href="../video/指环.mp4" download="video/指环.mp4"></a>
-					</video>
-					<figcaption><p>&nbsp;&nbsp;《霍比特人：五军之战》（The Hobbit: The Battle of the Five Armies）是彼得·杰克逊执导的《霍比特人》系列魔幻冒险电影的最终章，改编自托尔金小说，由华纳兄弟影片公司、新线电影公司 、 米高梅电影公司联合出品，伊恩·麦克莱恩、马丁·弗瑞曼、理查德·阿米蒂奇、伊万杰琳·莉莉、李·佩斯、卢克·伊万斯、本尼迪克特·康伯巴奇、凯特·布兰切特、奥兰多·布鲁姆主演，定于2014年12月17日在美国上映。
-<br />该片讲述比尔博·巴金斯和同伴被迫卷入一场反抗大军的战争，同时必须阻止恐怖的史矛革巨龙夺取王国的宝藏和毁灭整个中土世界。</p></figcaption>
-				</figure>
-			</section>
-			<section>
-				<form autocomplete="on">
-					<div>
-						<textarea name="input" rows="3" cols="20" placeholder="请输入评论……" title="评论框" accesskey="g" spellcheck="true" id="content"></textarea>
-					</div>
-					<button type="button" onclick="sendComment()">
-		    			<mark>发表评论</mark>
-		    		</button>
-				</form>
-			</section>
-			<section>
-				<ul id="commentList"></ul>
-			</section>
-		</article>
-		<div id="bottom">
-			<p>361魔方娱乐有限公司</p>
+
+		<ul class="topList">
+			<li>
+				<a href="index.html">首页</a>
+			</li>
+			<li>
+				<a href="热门.html">热门</a>
+			</li>
+			<li>
+				<a href="分类.html">分类</a>
+			</li>
+			<li id="vip">
+				<a href="">VIP中心</a>
+			</li>
+			<li>
+				<img src="../img/用户头像.png" width="50" height="50"
+					style="margin-left: -40%; margin-bottom: -5%;margin-top: -5%;cursor: pointer;" />
+			</li>
+		</ul>
+		<div>
+			<input type="text" name="s" class="sinput" placeholder="" autofocus x-webkit-speech>
+			<input type="submit" value="搜索" class="sbtn">
 		</div>
-	</body>
+	</div>
+	<hr />
+	<article>
+		<section>
+			<figure>
+				<video width="60%" height="40%" controls loop autoplay muted>
+					<source src="../video/指环.mp4" type="video/mp4">
+					</source>
+					<a href="../video/指环.mp4" download="video/指环.mp4"></a>
+				</video>
+				<figcaption>
+					<p>&nbsp;&nbsp;《霍比特人：五军之战》（The Hobbit: The Battle of the Five
+						Armies）是彼得·杰克逊执导的《霍比特人》系列魔幻冒险电影的最终章，改编自托尔金小说，由华纳兄弟影片公司、新线电影公司 、
+						米高梅电影公司联合出品，伊恩·麦克莱恩、马丁·弗瑞曼、理查德·阿米蒂奇、伊万杰琳·莉莉、李·佩斯、卢克·伊万斯、本尼迪克特·康伯巴奇、凯特·布兰切特、奥兰多·布鲁姆主演，定于2014年12月17日在美国上映。
+						<br />该片讲述比尔博·巴金斯和同伴被迫卷入一场反抗大军的战争，同时必须阻止恐怖的史矛革巨龙夺取王国的宝藏和毁灭整个中土世界。
+					</p>
+				</figcaption>
+			</figure>
+		</section>
+		<section>
+			<form autocomplete="on">
+				<div>
+					<textarea name="input" rows="3" cols="20" placeholder="请输入评论……" title="评论框" accesskey="g" spellcheck="true"
+						id="content"></textarea>
+				</div>
+				<button type="button" onclick="sendComment()">
+					<mark>发表评论</mark>
+				</button>
+			</form>
+		</section>
+		<section>
+			<ul id="commentList"></ul>
+		</section>
+	</article>
+	<div id="bottom">
+		<p>361魔方娱乐有限公司</p>
+	</div>
+</body>
 
 </html>

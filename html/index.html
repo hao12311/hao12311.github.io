@@ -1,159 +1,165 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<meta charset="utf-8" />
-		<title>电影网站</title>
-		<link rel="stylesheet" href="../css/css.css" />
-	</head>
-	<script src="../js/jquery-1.12.4.js"></script>
-	<body>
-		<script type="text/javascript">
-			var videos = document.getElementsByTagName('video');
-			for (var i = videos.length - 1; i >= 0; i--) {
-				(function() {
-					var p = i;
-					videos[p].addEventListener('play', function() {
-						pauseAll(p);
-					})
-				})()
-			}
-			
-			function pauseAll(index) {
-				for (var j = videos.length - 1; j >= 0; j--) {
-					if (j != index) videos[j].pause();
-				}
-			};
-			$(function() {
-					// test 的点击事件
-					$("#vip").click(function() {
-						alert("该区域尚未开放，请尽情期待！");
-					});
-				})
-		</script>
-		<div id="top">
-			<div class="logo">
-				<img src="../img/数据魔方.png" />
-			</div>
 
-			<ul class="topList">
-				<li>
-					<a href="index.html">首页</a>
-				</li>
-				<li>
-					<a href="热门.html">热门</a>
-				</li>
-				<li>
-					<a href="分类.html">分类</a>
-				</li>
-				<li id="vip">
-					<a href="">VIP中心</a>
-				</li>
-				<li>
-					<img src="../img/用户头像.png" width="50" height="50" style="margin-left: 10%; margin-bottom: -5%;margin-top: -5%;cursor: pointer;"/>
+<head>
+	<meta charset="utf-8" />
+	<title>电影网站</title>
+	<link rel="stylesheet" href="../css/css.css" />
+</head>
+<script src="../js/jquery-1.12.4.js"></script>
+
+<body>
+	<script type="text/javascript">
+		var videos = document.getElementsByTagName('video')
+		for (var i = videos.length - 1; i >= 0; i--) {
+			(function () {
+				var p = i
+				videos[p].addEventListener('play', function () {
+					pauseAll(p)
+				})
+			})()
+		}
+
+		function pauseAll (index) {
+			for (var j = videos.length - 1; j >= 0; j--) {
+				if (j != index) videos[j].pause()
+			}
+		};
+		$(function () {
+			// test 的点击事件
+			$("#vip").click(function () {
+				alert("该区域尚未开放，请尽情期待！")
+			})
+		})
+	</script>
+	<div id="top">
+		<div class="logo">
+			<img src="../img/数据魔方.png" />
+		</div>
+
+		<ul class="topList">
+			<li>
+				<a href="index.html">首页</a>
+			</li>
+			<li>
+				<a href="热门.html">热门</a>
+			</li>
+			<li>
+				<a href="分类.html">分类</a>
+			</li>
+			<li id="vip">
+				<a href="">VIP中心</a>
+			</li>
+			<li>
+				<img src="../img/用户头像.png" width="50" height="50"
+					style="margin-left: 10%; margin-bottom: -5%;margin-top: -5%;cursor: pointer;" />
+			</li>
+		</ul>
+		<div>
+			<input type="text" name="s" class="sinput" placeholder="" autofocus x-webkit-speech>
+			<input type="submit" value="搜索" class="sbtn">
+		</div>
+	</div>
+	<div id="content">
+		<div class="left_side">
+			<div class="top_pic">
+				<a href="剑雨.html"><img src="../img/剑雨.webp" style="width: 1150px;height: 300px;" /></a>
+				<a href="独立.html"><img src="../img/独立日.webp" style="width: 1150px;height: 300px;" /></a>
+				<a href="白蛇2.html"><img src="../img/白.webp" style="width: 1150px;height: 300px;" /></a>
+				<a href="翱翔.html"><img src="../img/翱翔.jfif" style="width: 1200px;height: 300px;" /></a>
+			</div>
+		</div>
+		<div id="right_side">
+			<ul class="list_group">
+				<li class="list_title">热门电影榜</li>
+				<li class="list_item"><a href="尚气.html">1.尚气与十环传奇</a></li>
+				<li class="list_item"><a href="长津湖.html">2.长津湖</a></li>
+				<li class="list_item"><a href="家乡.html">3.我和我的家乡</a></li>
+				<li class="list_item"><a href="白蛇2.html">4.白蛇2：青蛇劫起</a></li>
+				<li class="list_item"><a href="医生.html">5.中国医生</a></li>
+				<li class="list_item"><a href="复联4.html">6.复仇者联盟4：终局之战</a></li>
+				<li class="list_item">
+					<p><a href="">--->更多</a></p>
 				</li>
 			</ul>
-			<div>
-				<input type="text" name="s" class="sinput" placeholder="" autofocus x-webkit-speech>
-				<input type="submit" value="搜索" class="sbtn">
-			</div>
+			<ul class="list_group">
+				<li class="list_title">新片预告</li>
+				<li class="list_item">
+					<figure>
+						<video width="100%" height="100%" controls loop autoplay muted>
+							<source src="../video/指环.mp4" type="video/mp4">
+							</source>
+							<a href="../video/指环.mp4" download="指环.mp4"></a>
+						</video>
+						<figcaption><a href="指环.html">霍比特人3：五军之战</a></figcaption>
+					</figure>
+				</li>
+				<li class="list_item">
+					<figure>
+						<video width="100%" height="100%" controls loop autoplay muted>
+							<source src="../video/蜘蛛.mp4" type="video/mp4">
+							</source>
+							<a href="../video/蜘蛛.mp4" download="蜘蛛.mp4"></a>
+						</video>
+						<figcaption><a href="蜘蛛.html">蜘蛛侠3：英雄无归</a></figcaption>
+					</figure>
+				</li>
+				<li class="list_item">
+					<figure>
+						<video width="100%" height="100%" controls loop autoplay muted>
+							<source src="../video/加勒比.mp4" type="video/mp4">
+							</source>
+							<a href="../video/加勒比.mp4" download="加勒比.mp4"></a>
+						</video>
+						<figcaption><a href="加勒比.html">加勒比海盗5：死无对证</a></figcaption>
+					</figure>
+				</li>
+			</ul>
 		</div>
-		<div id="content">
-			<div class="left_side">
-				<div class="top_pic">
-					<a href="剑雨.html"><img src="../img/剑雨.webp" style="width: 1150px;height: 300px;" /></a>
-					<a href="独立.html"><img src="../img/独立日.webp" style="width: 1150px;height: 300px;" /></a>
-					<a href="白蛇2.html"><img src="../img/白.webp" style="width: 1150px;height: 300px;" /></a>
-					<a href="翱翔.html"><img src="../img/翱翔.jfif" style="width: 1200px;height: 300px;" /></a>
-				</div>
-			</div>
-			<div id="right_side">
-				<ul class="list_group">
-					<li class="list_title">热门电影榜</li>
-					<li class="list_item"><a href="尚气.html">1.尚气与十环传奇</a></li>
-					<li class="list_item"><a href="长津湖.html">2.长津湖</a></li>
-					<li class="list_item"><a href="家乡.html">3.我和我的家乡</a></li>
-					<li class="list_item"><a href="白蛇2.html">4.白蛇2：青蛇劫起</a></li>
-					<li class="list_item"><a href="医生.html">5.中国医生</a></li>
-					<li class="list_item"><a href="复联4.html">6.复仇者联盟4：终局之战</a></li>
-					<li class="list_item"><p><a href="">--->更多</a></p></li>
-				</ul>
-				<ul class="list_group">
-					<li class="list_title">新片预告</li>
-					<li class="list_item">
-						<figure>
-							<video width="100%" height="100%" controls loop autoplay muted>
-								<source src="../video/指环.mp4" type="video/mp4">
-								</source>
-								<a href="../video/指环.mp4" download="指环.mp4"></a>
-							</video>
-							<figcaption><a href="指环.html">霍比特人3：五军之战</a></figcaption>
-						</figure>
-					</li>
-					<li class="list_item">
-						<figure>
-							<video width="100%" height="100%" controls loop autoplay muted>
-								<source src="../video/蜘蛛.mp4" type="video/mp4">
-								</source>
-								<a href="../video/蜘蛛.mp4" download="蜘蛛.mp4"></a>
-							</video>
-							<figcaption><a href="蜘蛛.html">蜘蛛侠3：英雄无归</a></figcaption>
-						</figure>
-					</li>
-					<li class="list_item">
-						<figure>
-							<video width="100%" height="100%" controls loop autoplay muted>
-								<source src="../video/加勒比.mp4" type="video/mp4">
-								</source>
-								<a href="../video/加勒比.mp4" download="加勒比.mp4"></a>
-							</video>
-							<figcaption><a href="加勒比.html">加勒比海盗5：死无对证</a></figcaption>
-						</figure>
-					</li>
-				</ul>
-			</div>
-			<div id="products">
-				<h2>经典推荐</h2>
-				<a href="公主.html">
+		<div id="products">
+			<h2>经典推荐</h2>
+			<a href="公主.html">
 				<div>
-					<img src="../img/公主.jpg" alt="公主" />			
-						<p>公主日记</p>			
+					<img src="../img/公主.jpg" alt="公主" />
+					<p>公主日记</p>
 				</div>
-				</a>
-				<a href="山姆.html">
+			</a>
+			<a href="山姆.html">
 				<div>
-					<img src="../img/山姆.jpg" alt="山姆" />				
-						<p>我是山姆</p>			
+					<img src="../img/山姆.jpg" alt="山姆" />
+					<p>我是山姆</p>
 				</div>
-				</a>
-				<a href="心动.html">
+			</a>
+			<a href="心动.html">
 				<div>
-					<img src="../img/心动.jpg" alt="心动" />					
-						<p>怦然心动</p>	
+					<img src="../img/心动.jpg" alt="心动" />
+					<p>怦然心动</p>
 				</div>
-				</a>
-				<a href="7号房的礼物.html">
+			</a>
+			<a href="7号房的礼物.html">
 				<div>
-					<img src="../img/礼物.jpg" alt="礼物" />					
-						<p>七号房的礼物</p>					
+					<img src="../img/礼物.jpg" alt="礼物" />
+					<p>七号房的礼物</p>
 				</div>
-				</a>
-				<a href="我和我的父辈.html">
+			</a>
+			<a href="我和我的父辈.html">
 				<div>
-					<img src="../img/父辈.jpg" alt="父辈" />				
-						<p>我和我的父辈</p>			
+					<img src="../img/父辈.jpg" alt="父辈" />
+					<p>我和我的父辈</p>
 				</div>
-				</a>
-				<a href="怒火.html">
+			</a>
+			<a href="怒火.html">
 				<div>
-					<img src="../img/怒火.jpg" alt="怒火·重案" />					
-						<p>怒火·重案</p>				
+					<img src="../img/怒火.jpg" alt="怒火·重案" />
+					<p>怒火·重案</p>
 				</div>
-				</a>
-			</div>
+			</a>
 		</div>
-		<button class="btn"><a href="#" class="toTop">返回顶部</a></button>
-		<div id="bottom">
-			<p>361魔方娱乐有限公司</p>
-		</div>
-	</body>
+	</div>
+	<button class="btn"><a href="#" class="toTop">返回顶部</a></button>
+	<div id="bottom">
+		<p>361魔方娱乐有限公司</p>
+	</div>
+</body>
+
 </html>

@@ -1,69 +1,73 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<meta charset="utf-8" />
-		<title>注册登录</title>
-		<link rel="stylesheet" type="text/css" href="../css/style.css" />
-	</head>
-	<script type="text/javascript" src="../js/js.js"></script>
 
-	<body>
-		<table class="main" border="0" cellspacing="0" cellpadding="0">
-			<tr>
-				<td class="hr_2"><img src="../img/数据魔方.png" width="50" height="57" alt="logo" /><p >新用户注册</p></td>
-			</tr>
-			<tr>
-				<td style="height:10px;"></td>
-			</tr>
-			<form action="index.html" method="post" name="myform" onsubmit="return checkAll()">
-				<tr>
-					<td>
-						<table width="100%" border="0" cellspacing="0" cellpadding="0">
-							<tr>
-								<td class="left">用户名：</td>
-								<td class="center"><input id="user" type="text" class="inputClass" onblur="checkUser()"/></td>
-								<td>
-									<div id="user_prompt">4-16位字符组成，不能包含数字</div>
-								</td>
-							</tr>
-							<tr>
-								<td class="left">密码：</td>
-								<td class="center"><input id="pwd" type="password" class="inputClass" onblur="checkPwd()"/></td>
-								<td>
-									<div id="pwd_prompt">密码由4-10位字符组成</div>
-								</td>
-							</tr>
-							<tr>
-								<td class="left">确认密码：</td>
-								<td class="center"><input id="repwd" type="password" class="inputClass" onblur="checkRepwd()"/></td>
-								<td>
-									<div id="repwd_prompt"></div>
-								</td>
-							</tr>
-							<tr>
-								<td class="left">电子邮箱：</td>
-								<td class="center"><input id="email" type="text" class="inputClass" onblur="checkEmail()"/></td>
-								<td>
-									<div id="email_prompt">邮箱格式示例：web@126.com</div>
-								</td>
-							</tr>
-							<tr>
-								<td class="left">手机号码：</td>
-								<td class="center"><input id="mobile" type="text" class="inputClass" onblur="checkMobile()" /></td>
-								<td>
-									<div id="mobile_prompt"></div>
-								</td>
-							</tr>
-							<tr>
-								<td class="left">&nbsp;</td>
-								<td class="center"><input name="" type="image" src="../images/register.jpg" onclick="fnLogin()"/></td>
-								<td>&nbsp;</td>
-							</tr>
-						</table>
-					</td>
-				</tr>
-			</form>
-		</table>
+<head>
+	<meta charset="utf-8" />
+	<title>注册登录</title>
+	<link rel="stylesheet" type="text/css" href="../css/style.css" />
+</head>
+<script type="text/javascript" src="../js/js.js"></script>
 
-	</body>
+<body>
+	<table class="main" border="0" cellspacing="0" cellpadding="0">
+		<tr>
+			<td class="hr_2"><img src="../img/数据魔方.png" width="50" height="57" alt="logo" />
+				<p>新用户注册</p>
+			</td>
+		</tr>
+		<tr>
+			<td style="height:10px;"></td>
+		</tr>
+		<form action="index.html" method="post" name="myform" onsubmit="return checkAll()">
+			<tr>
+				<td>
+					<table width="100%" border="0" cellspacing="0" cellpadding="0">
+						<tr>
+							<td class="left">用户名：</td>
+							<td class="center"><input id="user" type="text" class="inputClass" onblur="checkUser()" /></td>
+							<td>
+								<div id="user_prompt">4-16位字符组成，不能包含数字</div>
+							</td>
+						</tr>
+						<tr>
+							<td class="left">密码：</td>
+							<td class="center"><input id="pwd" type="password" class="inputClass" onblur="checkPwd()" /></td>
+							<td>
+								<div id="pwd_prompt">密码由4-10位字符组成</div>
+							</td>
+						</tr>
+						<tr>
+							<td class="left">确认密码：</td>
+							<td class="center"><input id="repwd" type="password" class="inputClass" onblur="checkRepwd()" /></td>
+							<td>
+								<div id="repwd_prompt"></div>
+							</td>
+						</tr>
+						<tr>
+							<td class="left">电子邮箱：</td>
+							<td class="center"><input id="email" type="text" class="inputClass" onblur="checkEmail()" /></td>
+							<td>
+								<div id="email_prompt">邮箱格式示例：web@126.com</div>
+							</td>
+						</tr>
+						<tr>
+							<td class="left">手机号码：</td>
+							<td class="center"><input id="mobile" type="text" class="inputClass" onblur="checkMobile()" /></td>
+							<td>
+								<div id="mobile_prompt"></div>
+							</td>
+						</tr>
+						<tr>
+							<td class="left">&nbsp;</td>
+							<td class="center"><input name="" type="image" src="../images/register.jpg" onclick="fnLogin()" /></td>
+							<td>&nbsp;</td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+		</form>
+	</table>
+
+</body>
+
 </html>
